@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# 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
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'kivy_backend.settings')
