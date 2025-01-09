@@ -36,6 +36,10 @@ CSRF_TRUSTED_ORIGINS = ["https://*", "http://*", "https://122.228.237.118:61929"
 # Application definition
 
 INSTALLED_APPS = [
+    # 'jet.dashboard',
+    # 'jet',
+    # 'grappelli',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,12 +83,12 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
             'builtins':['django.templatetags.static']
         },
     },
 ]
-
 WSGI_APPLICATION = 'kivy_backend.wsgi.application'
 ASGI_APPLICATION = 'kivy_backend.asgi.application'  # 添加asgi配置
 
